@@ -2,23 +2,33 @@ body {
   margin: 0;
   padding: 0;
   font-family: Helvetica, sans-serif;
-  background-color: #f4f4f4;
-  background-image: url(./images/roofDavidJordan.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  /* background-size: 100% 100%; */
-  background-size: cover;
   height: 100%;
   overflow: auto; 
   color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  position: relative;
+}
+
+.mainSection {
+  height: 200px;
+  background-image: url(./images/roofThree.png);
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  background-size: cover;
 }
 
 .header {
   /* background-color: #fff; */
-  background: rgba(0, 0, 0, 0.5);
+  /* background: rgba(0, 0, 0, 0.5); */
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  background: rgb(218, 181, 146);
   /* background-color: rgb(55, 130, 188); */
-  color: white;
+  /* color: white; */
+  color: rgb(150, 100, 80);
   position: fixed;
   width: 100%;
   z-index: 10000;
