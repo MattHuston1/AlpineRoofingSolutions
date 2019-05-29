@@ -4,7 +4,7 @@ body {
   font-family: Helvetica, sans-serif;
   height: 100%;
   overflow: auto; 
-  color: white;
+  /* color: white; */
   display: flex;
   flex-direction: column;
 }
@@ -15,21 +15,23 @@ main {
 
 .mainSection {
   margin-top: 100px;
-  height: 200px;
+  height: 90vh;
   background-image: url(./images/roofThree.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  /* position: fixed; */
 }
 
 .header {
   /* background-color: #fff; */
   /* background: rgba(0, 0, 0, 0.5); */
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
-  background: rgb(218, 181, 146);
+  /* background: rgb(218, 181, 146); */
+  background: rgb(51, 51, 51);
   /* background-color: rgb(55, 130, 188); */
   /* color: white; */
-  color: rgb(150, 100, 80);
+  /* color: rgb(75, 38, 23); */
   position: fixed;
   height: 100px;
   width: 100%;
@@ -39,6 +41,10 @@ main {
   justify-content: space-between;
   /* align-items: center; */
   /* padding: 0 10px; */
+}
+
+.header h1 {
+  padding-left: 20px;
 }
 
 .header ul {
@@ -53,9 +59,10 @@ main {
 .header li a {
   display: block;
   padding: 20px 20px;
-  border-right: 1px solid #f4f4f4;
+  /* border-right: 1px solid rgb(75, 38, 23); */
+  border-right: 1px solid white;
   text-decoration: none;
-  color: white;
+  /* color: white; */
   
 }
 
@@ -63,7 +70,7 @@ main {
 .header .menu-btn:hover, .header a:hover {
   /* background-color: #f4f4f4; */
   /* background-color: rgb(237, 80, 40); */
-  color: rgb(237, 80, 40);
+  color: white;
 }
 
 .header .logo {
@@ -185,25 +192,30 @@ main {
 a {
   text-decoration: none;
   color: white;
+  /* color: rgb(75, 38, 23); */
 }
 
 .contactContainer {
+  z-index: 10000;
   display: flex;
-  justify-content: space-between;
-  margin: 10vw;
+  justify-content: center;
+  /* justify-content: space-between; */
+  /* margin: 10vw; */
   background: rgba(0, 0, 0, 0.3);
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
   padding: 1vw;
+  color: rgb(218, 181, 146);
 }
 
 .lenny {
   display: flex;
   /* flex-direction: column; */
   align-items: center;
-  border: 2px solid white;
+  border: 2px solid rgb(218, 181, 146);
   padding: 2vw;
 }
 
 .lenny img {
   height: 40vw;
+  padding-left: 2vw;
 }
